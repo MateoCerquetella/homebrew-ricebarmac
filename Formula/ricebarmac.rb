@@ -1,25 +1,23 @@
 class Ricebarmac < Formula
-  desc "Profile switcher for macOS (wallpapers, terminal themes, rice)"
+  desc "macOS menu bar app for managing rice configurations"
   homepage "https://github.com/mateocerquetella/RiceBarMac"
-  url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v0.1.0/RiceBarMac.zip"
-  sha256 "REPLACE_WITH_ZIP_CHECKSUM"
-  license "MIT"
-  version "0.1.0"
-
+  url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v1.0.0/RiceBarMac.zip"
+  sha256 "0429759cbdabe1494974a2cb6988b62a81fd33608254096962ed0e767029aa33"
+  version "1.0.0"
+  
+  depends_on :macos
+  
   def install
-    # For a simple binary
-    bin.install "RiceBarMac"
-    
-    # If you have an .app bundle instead, uncomment the line below:
-    # prefix.install "RiceBarMac.app"
-    
-    # If you have additional files (config, documentation, etc.)
-    # doc.install "README.md" if File.exist?("README.md")
-    # etc.install "config" => "ricebarmac" if Dir.exist?("config")
+    prefix.install "RiceBarMac.app"
   end
-
-  test do
-    # Basic test to ensure the binary can run
-    system "#{bin}/RiceBarMac", "--version"
+  
+  def caveats
+    <<~EOS
+      To run RiceBarMac, use:
+        open #{prefix}/RiceBarMac.app
+      
+      Or add it to your Applications folder:
+        ln -s #{prefix}/RiceBarMac.app /Applications/
+    EOS
   end
 end
