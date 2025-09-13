@@ -1,11 +1,10 @@
 class Ricebarmac < Formula
   desc "macOS menu bar app for managing rice configurations"
   homepage "https://github.com/mateocerquetella/RiceBarMac"
-  url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v1.0.3/RiceBarMac.zip"
-  sha256 "e080638806a603ce61c15f7e9dd10777a75cd9f72c9ae77b03d1ec284c073ca9"
-  version "1.0.3"
+  url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v1.0.4/RiceBarMac.zip"
+  sha256 "4950c6983561e4f7dd282c150c5d70266a85e714c9ea2b1baf68bfca3a99d926"
+  version "1.0.4"
   
-  depends_on macos: ">= :big_sur"
   
   def install
     # Install the menu bar app to Applications folder
