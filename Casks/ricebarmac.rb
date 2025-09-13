@@ -1,8 +1,8 @@
 cask "ricebarmac" do
-  version "1.0.8"
-  sha256 "3a682aefd69124b00ba984706ab2087b9fda1f217ce943d6e43f00f00c5f4d01"
+  version "1.0.9"
+  sha256 "3de4b6a0f57eabb1ed0b797e473d0bf5734eee2b9b82b1b25874b3b27fa68533"
   
-  url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v1.0.8/RiceBarMac.zip"
+  url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v1.0.9/RiceBarMac.zip"
   name "RiceBarMac"
   desc "macOS menu bar app for managing rice configurations"
   homepage "https://github.com/mateocerquetella/RiceBarMac"
