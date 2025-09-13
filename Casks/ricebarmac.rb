@@ -1,6 +1,6 @@
 cask "ricebarmac" do
   version "1.0.8"
-  sha256 "1589b3561b5b2cd48d5d2354dc2ffc418c5da593771d6036f5bcbcac333aa88c"
+  sha256 "3a682aefd69124b00ba984706ab2087b9fda1f217ce943d6e43f00f00c5f4d01"
   
   url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v1.0.8/RiceBarMac.zip"
   name "RiceBarMac"
