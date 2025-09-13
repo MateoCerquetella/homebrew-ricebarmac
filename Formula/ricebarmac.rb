@@ -1,25 +1,14 @@
 class Ricebarmac < Formula
   desc "macOS menu bar app for managing rice configurations"
   homepage "https://github.com/mateocerquetella/RiceBarMac"
-  url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v1.0.4/RiceBarMac.zip"
-  sha256 "4950c6983561e4f7dd282c150c5d70266a85e714c9ea2b1baf68bfca3a99d926"
-  version "1.0.4"
+  url "https://github.com/mateocerquetella/RiceBarMac/releases/download/v1.0.5/RiceBarMac.zip"
+  sha256 "7ed5b1ae71b119d5efe98a6dbcd027787d5d1f8f03707d86107315e488822e40"
+  version "1.0.5"
   
   
   def install
     # Install the menu bar app to Applications folder
-    if File.directory?("RiceBarMac.app")
-      # For menu bar apps, install directly to Applications
-      system "cp", "-R", "RiceBarMac.app", "/Applications/"
-    else
-      # Look for any .app bundle in case of naming issues
-      app_bundles = Dir.glob("*.app")
-      if app_bundles.empty?
-        odie "No .app bundle found in the downloaded archive"
-      else
-        system "cp", "-R", app_bundles.first, "/Applications/"
-      end
-    end
+    system "cp", "-R", "RiceBarMac.app", "/Applications/"
   end
   
   def caveats
